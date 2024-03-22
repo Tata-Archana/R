@@ -1,0 +1,36 @@
+---
+title: "Create new data set file | Merge Homelessness & Gross Median Rent"
+author: "Archana Tata"
+date: "2023-10-22"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(tidyr)
+library(dplyr)
+library(readr)
+library(rmarkdown)
+library(knitr)
+```
+
+**Read the files from directory and create data frames**
+
+```{r}
+gmr_rates_wide <- read_csv("gmr_rates_wide_final.csv", show_col_types = FALSE)
+view(gmr_rates_wide)
+
+pit_count_rates <- read_csv("df_pit_count_final_csv.csv", show_col_types = FALSE)
+view(pit_count_rates)
+```
+
+**Merge the homelessness rate data with the gross median rent data using a left join and create a new data frame. Save the new merged data as a csv to the directory**
+
+```{r}
+df_homless_rent_merge <- left_join(gmr_rates_wide, pit_count_rates, by = c("state", "statename", "year"))
+view(df_homless_rent_merge)
+
+write.csv(df_homless_rent_merge, "homeless_rent_merge_wide.csv", row.names = FALSE)
+
+```
+

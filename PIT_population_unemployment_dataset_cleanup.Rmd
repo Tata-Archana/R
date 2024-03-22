@@ -1,0 +1,124 @@
+---
+title: "PIT_population_unemployment_dataset_cleanup"
+author: "Archana Tata"
+date: "2023-10-15"
+output: html_document
+---
+```{r}
+library(dplyr)
+library(tidyverse)
+library(readxl)
+library(writexl)
+library(rio)
+library(ggplot2)
+```
+
+Population dataset cleanup 
+```{r}
+# Read the population by state and year to variable 'population_raw'
+population_raw <- read_csv("~/.../Popolation per state per year.csv")
+# Remove the first 5 rows with regional data
+population_raw <- tail(population_raw, -5) 
+
+# Select the years 2015 to 2019, remove row Puerto Rico 
+population_final <-  population_raw %>% 
+  select(5, (13:17)) %>%
+  subset(!NAME == "Puerto Rico") %>%
+  # Left join with 'state_abbrev_dict' 
+  left_join(state_abbrev_dict, by = c("NAME" = "State")) %>%
+  # Move column Abbr to the first
+  relocate(Abbr) %>% 
+  # Rename column Abbr to State, NAME to StateName and the rename the years
+  rename("State"="Abbr", "StateName" ="NAME", "2015" = "POPESTIMATE2015", "2016" = "POPESTIMATE2016", "2017" = "POPESTIMATE2017", "2018" = "POPESTIMATE2018", "2019" = "POPESTIMATE2019") %>%
+  # Pivot the data from columns to rows for each year, ignore the State  and StateName columns 
+  pivot_longer(cols = !c('State', 'StateName'), names_to = "Year", values_to = "population") %>%
+  # Transform the class of Year column from character to integer
+  transform(Year = as.integer(Year))
+```
+
+
+PIT count dataset merging yearly worksheets to one dataframe and cleaning up the data then add join with yearly population and calculate homeless rates
+```{r}
+# Save the file path to variable 'filepath_pit_data'
+filepath_pit_data <- "~/.../2007-2022-PIT-Counts-by-State.xlsx"
+
+# Using the 'Rio' package import the worksheets in the '2007-2022-PIT-Counts-by-State.xlsx' file into a list 'df_pit_raw'
+df_pit_raw <- import_list(filepath_pit_data)
+
+# Create an empty dataframe 'df_pit_count' to store the homeless data
+df_pit_count <- data.frame(
+  State = character(),
+  year = integer(),
+  homeless_total = integer(),
+  homeless_individual = integer(),
+  homeless_family = integer()
+)
+
+# Loop through the list 'df_pit_raw' from elements 5 through 9 for the years 2015 to 2019.
+for (i in 5:9){
+  # Select the columns for State, Overall homeless counts for total, individuals and families and store in 'df_temp'
+  df_temp <- select(df_pit_raw[[i]], c('State', 
+                                 contains('Overall Homeless,'),
+                                 contains('Overall Homeless Individuals,'),
+                                 contains('Overall Homeless People in Families,')))
+  # Remove the last row that contains the total value
+  df_temp <- head(df_temp, -1)
+  # Pivot the data from columns to rows for each year, ignore the State column
+  df_temp <- df_temp %>% pivot_longer(cols = !'State', 
+                                     names_to = c(".value", "year"), 
+                                     names_sep = ",")
+  # Create a dataframe with the values computed so far
+  df_temp <- data.frame(State = df_temp$'State', 
+                        year = as.integer(df_temp$year),
+                        homeless_total = df_temp$'Overall Homeless',
+                        homeless_individual = df_temp$'Overall Homeless Individuals',
+                        homeless_family = df_temp$'Overall Homeless People in Families')
+  # Bind the 'df_temp' dataframe to the 'df_pit_count' dataframe
+  df_pit_count <- rbind(df_pit_count, df_temp)
+}
+
+# Remove the observations for "AS", "GU", "MP", "PR", "VI"
+df_pit_count <- df_pit_count %>%
+  subset(!State %in% c("AS", "GU", "MP", "PR", "VI")) %>%
+  arrange(State, year) 
+
+# Do a full join of the polulation data to the homeless data by state and year
+df_pit_count_final <- df_pit_count %>%
+  full_join(population_final, by = c("State" = "State", "year" = "Year")) %>%
+  # Calculate the rate of homelessness and add them in columns
+  mutate(homeless_total_rate = round((homeless_total / population * 100), 2), homeless_individual_rate = round((homeless_individual / population * 100), 2), homeless_family_rate = round((homeless_family / population * 100), 2))
+```
+
+
+Cleaning and tidying unemployment dataset and then joini with PIT count dataset
+```{r}
+# Read the unemployment dataset into the variable 'unemployment_raw'
+unemployment_raw <- read_excel("~/.../Unemployment per state per year.xlsx")
+
+# Read the state abbreviation list
+state_abbrev_dict <- read_excel("~/.../state_abbrev_dict.xlsx")
+
+# Remove the observation for US
+unemployment_data <- tail(unemployment_raw, -1) %>% 
+  # Select columns for years 2015 to 2019
+  select(1 , (5:9)) %>%
+  # Join with 'state_abbrev_dict' dataset
+  left_join(state_abbrev_dict, by = "State") %>% 
+  # Select the columns Abbr and the years
+  select(2:7) %>% 
+  # Move column Abbr to the first
+  relocate(Abbr) %>% 
+  # Rename column Abbr to State
+  rename("State"="Abbr")
+
+# Pivot the data into the columns Year and unemployment_rate and store in the variable 'unemployment_data_final' 
+unemployment_data_final <- unemployment_data %>% 
+  pivot_longer(cols = !'State', names_to = "Year", values_to = "unemployment_rate") %>%
+  arrange(State) %>%
+  # Transform the class of Year column from character to integer
+  transform(Year = as.integer(Year))
+
+# Left join 'df_pit_count_final' and 'unemployment_data_final' by state and year into the variable 'df_pit_unemployment'
+df_pit_unemployment <- df_pit_count_final %>%
+  left_join(unemployment_data_final, by = c("State" = "State", "year" = "Year"))
+```

@@ -1,0 +1,163 @@
+---
+title: "Linear Regression Model"
+author: "Archana Tata"
+date: "2023-11-18"
+output: html_document
+---
+
+```{r}
+library(knitr)
+library(ggplot2)
+library(tidyverse)
+library(readr)
+```
+
+*Import Data Set* Data set = GroupData
+
+"state"\
+"year" "homeless_individual_rate" "homeless_family_rate"\
+"unemployment_rate"\
+"statename"\
+"population"\
+"poverty_rate"\
+"median_income"\
+"fmr_studio"\
+"mgr_studio"\
+"min_wage"
+
+```{r}
+HomelessData <- read.csv("GroupData.csv")
+colnames(HomelessData)
+
+
+```
+
+### *Multivariate Regregression Model(s)*
+
+```{r}
+ HomelessData_MRM <- lm(cbind(homeless_individual_rate, homeless_family_rate) ~  unemployment_rate + poverty_rate + median_income + fmr_studio + mgr_studio + min_wage, data = HomelessData)
+
+summary(HomelessData_MRM)
+
+```
+
+```{r}
+
+library(ggplot2)
+library(reshape2)
+
+# Extracting coefficients
+model_coefficients <- coef(HomelessData_MRM)
+
+# Convert to a data frame
+coefficients_df <- as.data.frame(model_coefficients)
+
+# Reshaping for plotting
+coefficients_df$variable <- rownames(coefficients_df)
+coefficients_df <- melt(coefficients_df, id.vars = "variable")
+
+# Renaming columns for clarity
+names(coefficients_df) <- c("Variable", "Predictor", "Value")
+# Creating a heatmap
+ggplot(coefficients_df, aes(x = Predictor, y = Variable, fill = Value)) +
+  geom_tile() +
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", midpoint = 0) +
+  xlab("Predictors") + ylab("Dependent Variables") +
+  ggtitle("Heatmap of Regression Coefficients") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+
+
+
+```{r}
+
+# Generate predictions
+predictions <- predict(HomelessData_MRM, newdata = HomelessData)
+
+# Add predictions to your dataframe
+HomelessData$predicted_Indv <- predictions[, "homeless_individual_rate"]
+
+
+
+HomelessData$predicted_Family <- predictions[, "homeless_family_rate"]
+
+
+# Plot for the first dependent variable
+ggplot(HomelessData, aes(x = predicted_Indv, y = homeless_individual_rate)) + 
+  geom_point() + 
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
+  xlab("Predicted Rates for Individuals") + 
+  ylab("Actual Rates for Individuals") + 
+  ggtitle("Predicted vs Actual Homeless Rates for Individuals")
+
+# Plot for the second dependent variable
+ggplot(HomelessData, aes(x = predicted_Family, y = homeless_family_rate)) + 
+  geom_point() + 
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
+  xlab("Predicted Rates for Families") + 
+  ylab("Actual Rates for Families") + 
+  ggtitle("Predicted vs Actual Homeless Rates for Families")
+```
+
+```{r}
+
+```
+
+#### *Cluster with K-means*
+
+```{r}
+
+#HomelessData <- na.omit(HomelessData)
+#HomelessData <- #HomelessData[!apply(is.infinite(HomelessData), 1, any), ]
+
+
+set.seed(350)
+
+ClusterData <- kmeans(HomelessData[, !names(HomelessData) %in% c("homeless_individual_rate", "homeless_family_rate", "year", "state", "statename")], centers = 3)
+
+# Add the cluster information to your data
+HomelessData$cluster <- ClusterData$cluster
+
+
+# Split the data into subsets for each cluster
+cluster1_data <- subset(HomelessData, cluster == 1)
+cluster2_data <- subset(HomelessData, cluster == 2)
+cluster3_data <- subset(HomelessData, cluster == 3)
+
+# Fit separate linear models for each cluster 
+
+model_cluster1 <- lm(cbind(homeless_individual_rate, homeless_family_rate) ~ state + year + unemployment_rate + population + poverty_rate + median_income + fmr_studio + mgr_studio + min_wage, data = cluster1_data)
+
+model_cluster2 <- lm(cbind(homeless_individual_rate, homeless_family_rate) ~ state + year + unemployment_rate + population + poverty_rate + median_income + fmr_studio + mgr_studio + min_wage, data = cluster2_data)
+
+model_cluster3 <- lm(cbind(homeless_individual_rate, homeless_family_rate) ~ state + year + unemployment_rate + population + poverty_rate + median_income + fmr_studio + mgr_studio + min_wage, data = cluster3_data)
+
+# Summarize the models
+summary(model_cluster1)
+summary(model_cluster2)
+summary(model_cluster3)
+
+```
+
+#### *3. Model 1 \| Individual Homeless Rate as the Dependent Variable*
+
+```{r}
+
+model1 <- lm(homeless_individual_rate ~ state + year + unemployment_rate + statename + population + poverty_rate + median_income + fmr_studio + mgr_studio + min_wage, data = HomelessData)
+
+summary(model1)
+
+```
+
+```{r}
+# Generate predictions from the model
+HomelessData$predicted <- predict(model1, newdata = HomelessData)
+
+```
+
+\`\`\`

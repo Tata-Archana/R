@@ -1,0 +1,387 @@
+---
+title: "Random Forest Regression on Homelessness Rate & Gross Median Rent"
+author: "Archana Tata"
+date: "2023-10-22"
+output: html_document
+---
+
+#### **LIbraries**
+
+```{r}
+library(randomForest)
+library(tidyverse)
+library(tidyr)
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(RColorBrewer)
+library(pdp)
+```
+
+
+### **Description**
+
+
+### **Data Set Used**
+
+```{r}
+homeless_rent_merge <- read_csv("homeless_rent_merge_wide.csv", show_col_types = FALSE )
+##View(homeless_rent_merge)
+```
+
+
+### **Run Random Forest Regression Analysis**
+
+
+```{r}
+
+rent_rfr <- randomForest(homeless_total_rate ~ MGR_all + Studio + BDRM1 + BDRM2, 
+                            data = homeless_rent_merge, 
+                            ntree = 500, 
+                            mtry = 3,
+                            importance = TRUE)
+##View(rent_rfr)
+```
+
+
+
+
+##Model Summary
+
+```{r}
+
+print(rent_rfr)
+
+```
+
+
+##Variable Importance
+
+1. **%IncMSE (Percentage Increase in Mean Squared Error):** This column measures how much worse the model's mean squared error becomes if that variable's values are permuted. If permuting a variable's values (randomly shuffling them) leads to a big increase in the model's error, it means that variable is important. Higher values in this column suggest greater importance.
+
+2. **IncNodePurity (Increase in Node Purity):** This is a measure of the total decrease in node impurities (e.g., residual sum of squares for regression trees) from splitting on the variable, averaged over all trees. For classification, it's usually measured by the Gini impurity. A higher value means the variable is more important for predicting the target variable.
+
+```{r}
+importance(rent_rfr)
+
+
+```
+###**Ranking:** 
+Variables with the highest values in these columns are the most important. They have the greatest influence on your target variable.
+
+###**Significance:** 
+A variable with a low importance score doesn't necessarily mean it's unimportant in an absolute sense. It just means it's less important relative to the other variables in this specific model.
+
+###**Comparison:**
+By comparing the importance of the variables, you can determine which variables might be worth keeping and which ones might be worth dropping from further analyses.
+
+####**other**
+Variables with higher importance can be considered for feature engineering, interaction effects, or further investigation.
+
+#____________________________________________________________________________________________________
+### **Interpreting our Results**
+
+The MGR of studio apartments has the greatest importance even though the 2 bedroom has a higher importance, this is because it has a much lower node purity.
+
+ 
+
+```{r}
+importance_data <- data.frame(Feature = rownames(importance(rent_rfr)), 
+                              Importance = importance(rent_rfr)[, "IncNodePurity"])
+
+ggplot(importance_data, aes(x = reorder(Feature, Importance), y = Importance, fill = Feature)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "Feature Importance", x = "Features", y = "Importance Score") +
+  scale_fill_brewer(palette = "Pastel2") +  # Choose the desired Brewer palette
+  theme(legend.position = "none")
+```
+
+
+
+# _______________________________________________________________________________
+
+##Out of Bag Error Rate
+
+```{r}
+rent_rfr$err.rate
+
+plot(rent_rfr, main="OOB Error Rate Across Trees")
+#legend("topright", colnames(rent_rfr$err.rate), col=1:ncol(rent_rfr$err.rate), fill=1:ncol(rent_rfr$err.rate))
+
+
+```
+### **Explaining the OOB Error Rate**
+
+**X-Axis (trees):** Represents the number of trees in the random forest (or another bagging model). As you move from left to right, the model includes more trees.
+
+**Y-Axis (Error):** Represents the OOB error rate. This error rate is calculated by making predictions on each observation using only the trees that did not have that observation in their bootstrap sample. It's a kind of cross-validation inherent to bagging methods.
+
+**Initial High Error Rate:** At the very beginning (close to 0 trees), the error rate is extremely high. This is typical when only a few trees are used, as the model hasn't "learned" much from the data yet.
+
+**Rapid Decline in Error:** As the number of trees increases, the error rate drops sharply. This indicates that adding more trees to the model initially improves its predictive accuracy significantly.
+
+**Stabilization of Error Rate:** After the sharp decline, the error rate seems to stabilize and only decreases marginally as more trees are added. This plateau suggests that after a certain number of trees, adding more doesn't significantly improve the OOB error rate. In practice, this is where you'd typically stop adding more trees to the model, as the benefits (in terms of reduced error) don't outweigh the costs (in terms of computation time and resources).
+
+**Optimal Number of Trees:** While the exact number can't be pinpointed from the graph without exact data points, it appears that the error rate stabilizes somewhere between 100 and 200 trees. Thus, any number in this range might be a good choice for the model, though one could choose a more precise number through further testing or by considering computational efficiency.
+# __________________________________________________________________
+
+### **Display an Interaction Plot for Studio rent and state**
+```{r}
+
+
+interaction_data <- partial(rent_rfr, 
+  pred.var = c("Studio", "statename"), 
+  grid.resolution = 50, 
+  chull = TRUE
+)
+
+plot(interaction_data)
+
+
+
+```
+
+### **Why doesn't it work?**
+State and studio are categorical variables and not well suited to an interaction plot. Instead I'm going to plot the average predictions for each state.
+
+
+
+
+### **Average Prediction for Each State*
+
+```{r}
+
+# Get predictions for each combination
+predicted_data <- data.frame(
+  Studio = interaction_data$Studio,
+  statename = interaction_data$statename,
+  yhat = interaction_data$yhat
+)
+
+# Aggregate predictions
+agg_data <- predicted_data %>%
+  group_by(Studio, statename) %>%
+  summarize(avg_yhat = mean(yhat)) %>%
+  mutate(avg_yhat = round(avg_yhat, 0))  # Round to whole numbers
+
+# Limit to top 5 states based on average predicted homeless count
+top_states <- agg_data %>%
+  arrange(-avg_yhat) %>%
+  pull(statename) %>%
+  unique() %>%
+  head(3)
+
+agg_data <- agg_data %>% filter(statename %in% top_states)
+
+
+ggplot(agg_data, aes(x = statename, y = avg_yhat, fill = as.factor(Studio))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  coord_flip() +
+  labs(title = "Interaction",
+       y = "Average Predicted Homeless Count") +
+  scale_y_continuous(labels = function(x) format(x, big.mark = ",", decimal.mark = ".", nsmall = 0))  
+# Format y-axis labels as whole numbers
+
+
+```
+
+#### **This view does not offer any value either**
+
+## **Temporal Analysis**
+
+### **Time Series plot of Actual Rate vs Predicted Rate**
+
+```{r}
+# Predict using the random forest model
+homeless_rent_merge$predicted = predict(rent_rfr, homeless_rent_merge)
+
+# Plot actual vs predicted over time (assuming you have a 'year' column)
+library(ggplot2)
+ggplot(homeless_rent_merge, aes(x=year)) +
+  geom_line(aes(y=homeless_total_rate, color="Actual")) +
+  geom_line(aes(y=predicted, color="Predicted")) +
+  labs(title="Actual vs Predicted Homelessness Rate Over Time", y="Homelessness Rate") +
+  scale_color_manual(values=c("Actual"="blue", "Predicted"="red"))
+
+```
+
+### **Yearly Feature Importance**
+
+```{r}
+
+# Unique years
+years <- unique(homeless_rent_merge$year)
+
+# Initialize a data frame to store importance values and a list to store models
+importance_long <- data.frame()
+rfr_list <- list()
+
+# Loop through each year
+for (yr in years) {
+  # Subset data for the specific year
+  subset_data <- subset(homeless_rent_merge, year == yr)
+  
+  # Compute Random Forest
+  rfr <- randomForest(homeless_total_rate ~ MGR_all + Studio + BDRM1 + BDRM2, 
+                      data = subset_data, 
+                      ntree = 500, 
+                      mtry = 3,
+                      importance = TRUE)
+  
+  # Store the model in the list
+  rfr_list[[as.character(yr)]] <- rfr
+  
+  # Extract feature importance and bind to the main dataframe
+  imp_df <- as.data.frame(importance(rfr))
+  imp_df$year <- yr
+  imp_df$Feature <- rownames(imp_df)
+  importance_long <- rbind(importance_long, imp_df)
+}
+
+
+
+
+```
+
+
+```{r}
+
+ggplot(importance_long, aes(x = reorder(Feature, IncNodePurity), y = IncNodePurity, fill = Feature)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~year, scales = "free") +
+  coord_flip() +
+  labs(title = "Feature Importance by Year", x = "Features", y = "Importance Score") +
+  scale_fill_brewer(palette = "Pastel2") +
+  theme(legend.position = "none")
+
+
+```
+
+#### **Comparing to the Earlier Bar Chart for All Years - Something does not look right*
+
+### **Perform Checks on the Model**
+
+#### **Check Data Distribution**
+
+```{r}
+
+
+# Plot for Studio
+ggplot(homeless_rent_merge, aes(x = Studio)) + 
+  geom_histogram(binwidth = 50, fill = "skyblue", color = "black", alpha = 0.7) +
+  facet_wrap(~year) +
+  labs(title = "Distribution of Studio Rent by Year", x = "Studio Rent", y = "Count")
+
+# Plot for BDRM1
+ggplot(homeless_rent_merge, aes(x = BDRM1)) + 
+  geom_histogram(binwidth = 50, fill = "salmon", color = "black", alpha = 0.7) +
+  facet_wrap(~year) +
+  labs(title = "Distribution of 1 Bedroom Rent by Year", x = "1 Bedroom Rent", y = "Count")
+
+```
+
+#### **Distribution of Target Variable**
+
+```{r}
+# Plot for homeless_total_rate
+ggplot(homeless_rent_merge, aes(x = homeless_total_rate)) + 
+  geom_histogram(binwidth = 0.1, fill = "lightgreen", color = "black", alpha = 0.7) +
+  facet_wrap(~year) +
+  labs(title = "Distribution of Homelessness Rate by Year", x = "Homelessness Rate", y = "Count")
+
+```
+
+### **Model Stability Tests**
+
+```{r}
+set.seed(435)  # rerun test by changing seed value
+# ReRun RFR Model and save to a different df and subset
+# Unique years
+years <- unique(homeless_rent_merge$year)
+
+# Initialize a data frame to store importance values - using 2
+importance_long2 <- data.frame()
+
+# Loop through each year
+for (yr in years) {
+  # Subset data for the specific year - use subset 2
+  subset_data2 <- subset(homeless_rent_merge, year == yr)
+  
+  # Compute Random Forest on new subset
+  rfr <- randomForest(homeless_total_rate ~ MGR_all + Studio + BDRM1 + BDRM2, 
+                      data = subset_data2, 
+                      ntree = 500, 
+                      mtry = 3,
+                      importance = TRUE)
+  
+  # Extract feature importance and bind to the main dataframe
+  imp_df2 <- as.data.frame(importance(rfr))
+  imp_df2$year <- yr
+  imp_df2$Feature <- rownames(imp_df2)
+  importance_long2 <- rbind(importance_long2, imp_df2)
+}
+
+# Observe feature importance
+
+
+ggplot(importance_long2, aes(x = reorder(Feature, IncNodePurity), y = IncNodePurity, fill = Feature)) +
+  geom_bar(stat = "identity") +
+  facet_wrap(~year, scales = "free") +
+  coord_flip() +
+  labs(title = "Feature Importance by Year Model Stability Test", x = "Features", y = "Importance Score") +
+  scale_fill_brewer(palette = "Pastel2") +
+  theme(legend.position = "none")
+
+```
+
+#### **Stability Test Results**
+There is very little difference when changing the seed.
+
+### **Interactions and Collinearity**
+
+```{r}
+correlations <- sapply(unique(homeless_rent_merge$year), function(yr) {
+  subset_data <- subset(homeless_rent_merge, year == yr)
+  cor(subset_data$Studio, subset_data$BDRM1, method = "pearson")
+})
+
+print(correlations)
+
+```
+
+#### **Results of Collinearity** **Question for Professor**
+This could be the problem. The results (all very close to 1) suggest multicollinearty between Studio and 1 Bedroom rents. This could mean that it is difficult to differentiate between the two.
+
+# ____________________________________________________________________
+
+### **MSE**
+
+```{r}
+mse_list <- sapply(1:length(years), function(i) {
+  subset_data <- subset(homeless_rent_merge, year == years[i])
+  year_pred <- predict(rfr_list[[i]], subset_data)
+  mean((year_pred - subset_data$homeless_total_rate)^2)
+})
+
+print(mse_list)
+
+```
+```{r}
+# Predicted values from the overall model
+overall_pred <- predict(rent_rfr, homeless_rent_merge)
+
+# Compute the residuals
+residuals <- overall_pred - homeless_rent_merge$homeless_total_rate
+
+# Calculate the Mean Squared Error (MSE)
+overall_mse <- mean(residuals^2)
+
+print(overall_mse)
+
+```
+
+#### **MSE Results**  **Ask Professor**
+I think these results indicate an issue. There should not be such variation between the individual years and the overall model nor should there be so much variation between years.
+
+Research --> "A lower MSE indicates better model performance. If a particular year's model has a significantly different MSE from others, it might suggest data anomalies or that the relationship between predictors and the target variable has changed for that year."

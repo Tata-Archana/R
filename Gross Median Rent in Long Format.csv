@@ -1,0 +1,1021 @@
+"State","year","rent_type","value"
+"Alabama","2015","MGR - Total",729
+"Alabama","2015","MGR - Studio",606
+"Alabama","2015","MGR - 1 BDRM",567
+"Alabama","2015","MGR - 2 BDRM",702
+"Alabama","2016","MGR - Total",743
+"Alabama","2016","MGR - Studio",536
+"Alabama","2016","MGR - 1 BDRM",575
+"Alabama","2016","MGR - 2 BDRM",714
+"Alabama","2017","MGR - Total",750
+"Alabama","2017","MGR - Studio",590
+"Alabama","2017","MGR - 1 BDRM",587
+"Alabama","2017","MGR - 2 BDRM",721
+"Alabama","2018","MGR - Total",788
+"Alabama","2018","MGR - Studio",586
+"Alabama","2018","MGR - 1 BDRM",605
+"Alabama","2018","MGR - 2 BDRM",752
+"Alabama","2019","MGR - Total",807
+"Alabama","2019","MGR - Studio",562
+"Alabama","2019","MGR - 1 BDRM",651
+"Alabama","2019","MGR - 2 BDRM",777
+"Alaska","2015","MGR - Total",1163
+"Alaska","2015","MGR - Studio",800
+"Alaska","2015","MGR - 1 BDRM",892
+"Alaska","2015","MGR - 2 BDRM",1170
+"Alaska","2016","MGR - Total",1208
+"Alaska","2016","MGR - Studio",744
+"Alaska","2016","MGR - 1 BDRM",936
+"Alaska","2016","MGR - 2 BDRM",1203
+"Alaska","2017","MGR - Total",1201
+"Alaska","2017","MGR - Studio",760
+"Alaska","2017","MGR - 1 BDRM",853
+"Alaska","2017","MGR - 2 BDRM",1208
+"Alaska","2018","MGR - Total",1177
+"Alaska","2018","MGR - Studio",822
+"Alaska","2018","MGR - 1 BDRM",897
+"Alaska","2018","MGR - 2 BDRM",1162
+"Alaska","2019","MGR - Total",1201
+"Alaska","2019","MGR - Studio",806
+"Alaska","2019","MGR - 1 BDRM",881
+"Alaska","2019","MGR - 2 BDRM",1220
+"Arizona","2015","MGR - Total",933
+"Arizona","2015","MGR - Studio",652
+"Arizona","2015","MGR - 1 BDRM",715
+"Arizona","2015","MGR - 2 BDRM",880
+"Arizona","2016","MGR - Total",976
+"Arizona","2016","MGR - Studio",679
+"Arizona","2016","MGR - 1 BDRM",751
+"Arizona","2016","MGR - 2 BDRM",935
+"Arizona","2017","MGR - Total",1020
+"Arizona","2017","MGR - Studio",802
+"Arizona","2017","MGR - 1 BDRM",804
+"Arizona","2017","MGR - 2 BDRM",965
+"Arizona","2018","MGR - Total",1036
+"Arizona","2018","MGR - Studio",758
+"Arizona","2018","MGR - 1 BDRM",842
+"Arizona","2018","MGR - 2 BDRM",1007
+"Arizona","2019","MGR - Total",1101
+"Arizona","2019","MGR - Studio",788
+"Arizona","2019","MGR - 1 BDRM",889
+"Arizona","2019","MGR - 2 BDRM",1083
+"Arkansas","2015","MGR - Total",695
+"Arkansas","2015","MGR - Studio",514
+"Arkansas","2015","MGR - 1 BDRM",519
+"Arkansas","2015","MGR - 2 BDRM",673
+"Arkansas","2016","MGR - Total",701
+"Arkansas","2016","MGR - Studio",502
+"Arkansas","2016","MGR - 1 BDRM",551
+"Arkansas","2016","MGR - 2 BDRM",687
+"Arkansas","2017","MGR - Total",711
+"Arkansas","2017","MGR - Studio",499
+"Arkansas","2017","MGR - 1 BDRM",539
+"Arkansas","2017","MGR - 2 BDRM",682
+"Arkansas","2018","MGR - Total",731
+"Arkansas","2018","MGR - Studio",588
+"Arkansas","2018","MGR - 1 BDRM",548
+"Arkansas","2018","MGR - 2 BDRM",700
+"Arkansas","2019","MGR - Total",742
+"Arkansas","2019","MGR - Studio",536
+"Arkansas","2019","MGR - 1 BDRM",576
+"Arkansas","2019","MGR - 2 BDRM",714
+"California","2015","MGR - Total",1311
+"California","2015","MGR - Studio",960
+"California","2015","MGR - 1 BDRM",1105
+"California","2015","MGR - 2 BDRM",1325
+"California","2016","MGR - Total",1375
+"California","2016","MGR - Studio",1022
+"California","2016","MGR - 1 BDRM",1151
+"California","2016","MGR - 2 BDRM",1392
+"California","2017","MGR - Total",1447
+"California","2017","MGR - Studio",1086
+"California","2017","MGR - 1 BDRM",1208
+"California","2017","MGR - 2 BDRM",1480
+"California","2018","MGR - Total",1520
+"California","2018","MGR - Studio",1150
+"California","2018","MGR - 1 BDRM",1291
+"California","2018","MGR - 2 BDRM",1562
+"California","2019","MGR - Total",1614
+"California","2019","MGR - Studio",1248
+"California","2019","MGR - 1 BDRM",1379
+"California","2019","MGR - 2 BDRM",1655
+"Colorado","2015","MGR - Total",1111
+"Colorado","2015","MGR - Studio",815
+"Colorado","2015","MGR - 1 BDRM",910
+"Colorado","2015","MGR - 2 BDRM",1098
+"Colorado","2016","MGR - Total",1171
+"Colorado","2016","MGR - Studio",855
+"Colorado","2016","MGR - 1 BDRM",973
+"Colorado","2016","MGR - 2 BDRM",1162
+"Colorado","2017","MGR - Total",1240
+"Colorado","2017","MGR - Studio",947
+"Colorado","2017","MGR - 1 BDRM",1051
+"Colorado","2017","MGR - 2 BDRM",1238
+"Colorado","2018","MGR - Total",1289
+"Colorado","2018","MGR - Studio",976
+"Colorado","2018","MGR - 1 BDRM",1119
+"Colorado","2018","MGR - 2 BDRM",1302
+"Colorado","2019","MGR - Total",1369
+"Colorado","2019","MGR - Studio",1068
+"Colorado","2019","MGR - 1 BDRM",1196
+"Colorado","2019","MGR - 2 BDRM",1391
+"Connecticut","2015","MGR - Total",1108
+"Connecticut","2015","MGR - Studio",740
+"Connecticut","2015","MGR - 1 BDRM",905
+"Connecticut","2015","MGR - 2 BDRM",1151
+"Connecticut","2016","MGR - Total",1115
+"Connecticut","2016","MGR - Studio",722
+"Connecticut","2016","MGR - 1 BDRM",927
+"Connecticut","2016","MGR - 2 BDRM",1158
+"Connecticut","2017","MGR - Total",1125
+"Connecticut","2017","MGR - Studio",780
+"Connecticut","2017","MGR - 1 BDRM",927
+"Connecticut","2017","MGR - 2 BDRM",1188
+"Connecticut","2018","MGR - Total",1171
+"Connecticut","2018","MGR - Studio",802
+"Connecticut","2018","MGR - 1 BDRM",951
+"Connecticut","2018","MGR - 2 BDRM",1226
+"Connecticut","2019","MGR - Total",1177
+"Connecticut","2019","MGR - Studio",846
+"Connecticut","2019","MGR - 1 BDRM",964
+"Connecticut","2019","MGR - 2 BDRM",1233
+"Delaware","2015","MGR - Total",1049
+"Delaware","2015","MGR - Studio",823
+"Delaware","2015","MGR - 1 BDRM",827
+"Delaware","2015","MGR - 2 BDRM",1028
+"Delaware","2016","MGR - Total",1048
+"Delaware","2016","MGR - Studio",870
+"Delaware","2016","MGR - 1 BDRM",860
+"Delaware","2016","MGR - 2 BDRM",1020
+"Delaware","2017","MGR - Total",1086
+"Delaware","2017","MGR - Studio",842
+"Delaware","2017","MGR - 1 BDRM",880
+"Delaware","2017","MGR - 2 BDRM",1099
+"Delaware","2018","MGR - Total",1108
+"Delaware","2018","MGR - Studio",864
+"Delaware","2018","MGR - 1 BDRM",875
+"Delaware","2018","MGR - 2 BDRM",1093
+"Delaware","2019","MGR - Total",1116
+"Delaware","2019","MGR - Studio",973
+"Delaware","2019","MGR - 1 BDRM",932
+"Delaware","2019","MGR - 2 BDRM",1112
+"District of Columbia","2015","MGR - Total",1417
+"District of Columbia","2015","MGR - Studio",1376
+"District of Columbia","2015","MGR - 1 BDRM",1388
+"District of Columbia","2015","MGR - 2 BDRM",1347
+"District of Columbia","2016","MGR - Total",1376
+"District of Columbia","2016","MGR - Studio",1358
+"District of Columbia","2016","MGR - 1 BDRM",1326
+"District of Columbia","2016","MGR - 2 BDRM",1348
+"District of Columbia","2017","MGR - Total",1499
+"District of Columbia","2017","MGR - Studio",1541
+"District of Columbia","2017","MGR - 1 BDRM",1352
+"District of Columbia","2017","MGR - 2 BDRM",1566
+"District of Columbia","2018","MGR - Total",1516
+"District of Columbia","2018","MGR - Studio",1514
+"District of Columbia","2018","MGR - 1 BDRM",1504
+"District of Columbia","2018","MGR - 2 BDRM",1432
+"District of Columbia","2019","MGR - Total",1603
+"District of Columbia","2019","MGR - Studio",1573
+"District of Columbia","2019","MGR - 1 BDRM",1607
+"District of Columbia","2019","MGR - 2 BDRM",1594
+"Florida","2015","MGR - Total",1046
+"Florida","2015","MGR - Studio",783
+"Florida","2015","MGR - 1 BDRM",845
+"Florida","2015","MGR - 2 BDRM",1024
+"Florida","2016","MGR - Total",1086
+"Florida","2016","MGR - Studio",840
+"Florida","2016","MGR - 1 BDRM",884
+"Florida","2016","MGR - 2 BDRM",1073
+"Florida","2017","MGR - Total",1128
+"Florida","2017","MGR - Studio",858
+"Florida","2017","MGR - 1 BDRM",938
+"Florida","2017","MGR - 2 BDRM",1113
+"Florida","2018","MGR - Total",1182
+"Florida","2018","MGR - Studio",931
+"Florida","2018","MGR - 1 BDRM",974
+"Florida","2018","MGR - 2 BDRM",1176
+"Florida","2019","MGR - Total",1238
+"Florida","2019","MGR - Studio",1002
+"Florida","2019","MGR - 1 BDRM",1040
+"Florida","2019","MGR - 2 BDRM",1240
+"Georgia","2015","MGR - Total",909
+"Georgia","2015","MGR - Studio",753
+"Georgia","2015","MGR - 1 BDRM",785
+"Georgia","2015","MGR - 2 BDRM",852
+"Georgia","2016","MGR - Total",933
+"Georgia","2016","MGR - Studio",722
+"Georgia","2016","MGR - 1 BDRM",823
+"Georgia","2016","MGR - 2 BDRM",871
+"Georgia","2017","MGR - Total",958
+"Georgia","2017","MGR - Studio",761
+"Georgia","2017","MGR - 1 BDRM",859
+"Georgia","2017","MGR - 2 BDRM",887
+"Georgia","2018","MGR - Total",1008
+"Georgia","2018","MGR - Studio",853
+"Georgia","2018","MGR - 1 BDRM",917
+"Georgia","2018","MGR - 2 BDRM",940
+"Georgia","2019","MGR - Total",1049
+"Georgia","2019","MGR - Studio",885
+"Georgia","2019","MGR - 1 BDRM",985
+"Georgia","2019","MGR - 2 BDRM",977
+"Hawaii","2015","MGR - Total",1500
+"Hawaii","2015","MGR - Studio",987
+"Hawaii","2015","MGR - 1 BDRM",1173
+"Hawaii","2015","MGR - 2 BDRM",1457
+"Hawaii","2016","MGR - Total",1483
+"Hawaii","2016","MGR - Studio",1061
+"Hawaii","2016","MGR - 1 BDRM",1143
+"Hawaii","2016","MGR - 2 BDRM",1519
+"Hawaii","2017","MGR - Total",1573
+"Hawaii","2017","MGR - Studio",1070
+"Hawaii","2017","MGR - 1 BDRM",1166
+"Hawaii","2017","MGR - 2 BDRM",1598
+"Hawaii","2018","MGR - Total",1613
+"Hawaii","2018","MGR - Studio",1016
+"Hawaii","2018","MGR - 1 BDRM",1186
+"Hawaii","2018","MGR - 2 BDRM",1614
+"Hawaii","2019","MGR - Total",1651
+"Hawaii","2019","MGR - Studio",1078
+"Hawaii","2019","MGR - 1 BDRM",1211
+"Hawaii","2019","MGR - 2 BDRM",1719
+"Idaho","2015","MGR - Total",770
+"Idaho","2015","MGR - Studio",515
+"Idaho","2015","MGR - 1 BDRM",572
+"Idaho","2015","MGR - 2 BDRM",720
+"Idaho","2016","MGR - Total",790
+"Idaho","2016","MGR - Studio",570
+"Idaho","2016","MGR - 1 BDRM",575
+"Idaho","2016","MGR - 2 BDRM",740
+"Idaho","2017","MGR - Total",822
+"Idaho","2017","MGR - Studio",605
+"Idaho","2017","MGR - 1 BDRM",603
+"Idaho","2017","MGR - 2 BDRM",769
+"Idaho","2018","MGR - Total",848
+"Idaho","2018","MGR - Studio",599
+"Idaho","2018","MGR - 1 BDRM",620
+"Idaho","2018","MGR - 2 BDRM",814
+"Idaho","2019","MGR - Total",880
+"Idaho","2019","MGR - Studio",625
+"Idaho","2019","MGR - 1 BDRM",681
+"Idaho","2019","MGR - 2 BDRM",843
+"Illinois","2015","MGR - Total",936
+"Illinois","2015","MGR - Studio",753
+"Illinois","2015","MGR - 1 BDRM",802
+"Illinois","2015","MGR - 2 BDRM",945
+"Illinois","2016","MGR - Total",950
+"Illinois","2016","MGR - Studio",786
+"Illinois","2016","MGR - 1 BDRM",833
+"Illinois","2016","MGR - 2 BDRM",952
+"Illinois","2017","MGR - Total",974
+"Illinois","2017","MGR - Studio",801
+"Illinois","2017","MGR - 1 BDRM",851
+"Illinois","2017","MGR - 2 BDRM",977
+"Illinois","2018","MGR - Total",995
+"Illinois","2018","MGR - Studio",842
+"Illinois","2018","MGR - 1 BDRM",860
+"Illinois","2018","MGR - 2 BDRM",1000
+"Illinois","2019","MGR - Total",1020
+"Illinois","2019","MGR - Studio",855
+"Illinois","2019","MGR - 1 BDRM",894
+"Illinois","2019","MGR - 2 BDRM",1023
+"Indiana","2015","MGR - Total",758
+"Indiana","2015","MGR - Studio",578
+"Indiana","2015","MGR - 1 BDRM",607
+"Indiana","2015","MGR - 2 BDRM",769
+"Indiana","2016","MGR - Total",768
+"Indiana","2016","MGR - Studio",570
+"Indiana","2016","MGR - 1 BDRM",616
+"Indiana","2016","MGR - 2 BDRM",775
+"Indiana","2017","MGR - Total",793
+"Indiana","2017","MGR - Studio",590
+"Indiana","2017","MGR - 1 BDRM",647
+"Indiana","2017","MGR - 2 BDRM",803
+"Indiana","2018","MGR - Total",820
+"Indiana","2018","MGR - Studio",627
+"Indiana","2018","MGR - 1 BDRM",677
+"Indiana","2018","MGR - 2 BDRM",827
+"Indiana","2019","MGR - Total",840
+"Indiana","2019","MGR - Studio",661
+"Indiana","2019","MGR - 1 BDRM",685
+"Indiana","2019","MGR - 2 BDRM",843
+"Iowa","2015","MGR - Total",718
+"Iowa","2015","MGR - Studio",543
+"Iowa","2015","MGR - 1 BDRM",556
+"Iowa","2015","MGR - 2 BDRM",741
+"Iowa","2016","MGR - Total",741
+"Iowa","2016","MGR - Studio",582
+"Iowa","2016","MGR - 1 BDRM",580
+"Iowa","2016","MGR - 2 BDRM",759
+"Iowa","2017","MGR - Total",760
+"Iowa","2017","MGR - Studio",562
+"Iowa","2017","MGR - 1 BDRM",592
+"Iowa","2017","MGR - 2 BDRM",771
+"Iowa","2018","MGR - Total",777
+"Iowa","2018","MGR - Studio",631
+"Iowa","2018","MGR - 1 BDRM",604
+"Iowa","2018","MGR - 2 BDRM",797
+"Iowa","2019","MGR - Total",808
+"Iowa","2019","MGR - Studio",568
+"Iowa","2019","MGR - 1 BDRM",620
+"Iowa","2019","MGR - 2 BDRM",826
+"Kansas","2015","MGR - Total",782
+"Kansas","2015","MGR - Studio",593
+"Kansas","2015","MGR - 1 BDRM",584
+"Kansas","2015","MGR - 2 BDRM",776
+"Kansas","2016","MGR - Total",789
+"Kansas","2016","MGR - Studio",589
+"Kansas","2016","MGR - 1 BDRM",623
+"Kansas","2016","MGR - 2 BDRM",780
+"Kansas","2017","MGR - Total",815
+"Kansas","2017","MGR - Studio",617
+"Kansas","2017","MGR - 1 BDRM",652
+"Kansas","2017","MGR - 2 BDRM",822
+"Kansas","2018","MGR - Total",840
+"Kansas","2018","MGR - Studio",707
+"Kansas","2018","MGR - 1 BDRM",657
+"Kansas","2018","MGR - 2 BDRM",836
+"Kansas","2019","MGR - Total",862
+"Kansas","2019","MGR - Studio",651
+"Kansas","2019","MGR - 1 BDRM",682
+"Kansas","2019","MGR - 2 BDRM",837
+"Kentucky","2015","MGR - Total",702
+"Kentucky","2015","MGR - Studio",508
+"Kentucky","2015","MGR - 1 BDRM",558
+"Kentucky","2015","MGR - 2 BDRM",690
+"Kentucky","2016","MGR - Total",707
+"Kentucky","2016","MGR - Studio",500
+"Kentucky","2016","MGR - 1 BDRM",560
+"Kentucky","2016","MGR - 2 BDRM",696
+"Kentucky","2017","MGR - Total",724
+"Kentucky","2017","MGR - Studio",507
+"Kentucky","2017","MGR - 1 BDRM",578
+"Kentucky","2017","MGR - 2 BDRM",703
+"Kentucky","2018","MGR - Total",779
+"Kentucky","2018","MGR - Studio",575
+"Kentucky","2018","MGR - 1 BDRM",616
+"Kentucky","2018","MGR - 2 BDRM",772
+"Kentucky","2019","MGR - Total",773
+"Kentucky","2019","MGR - Studio",574
+"Kentucky","2019","MGR - 1 BDRM",652
+"Kentucky","2019","MGR - 2 BDRM",760
+"Louisiana","2015","MGR - Total",800
+"Louisiana","2015","MGR - Studio",653
+"Louisiana","2015","MGR - 1 BDRM",678
+"Louisiana","2015","MGR - 2 BDRM",789
+"Louisiana","2016","MGR - Total",808
+"Louisiana","2016","MGR - Studio",632
+"Louisiana","2016","MGR - 1 BDRM",681
+"Louisiana","2016","MGR - 2 BDRM",802
+"Louisiana","2017","MGR - Total",836
+"Louisiana","2017","MGR - Studio",587
+"Louisiana","2017","MGR - 1 BDRM",700
+"Louisiana","2017","MGR - 2 BDRM",821
+"Louisiana","2018","MGR - Total",854
+"Louisiana","2018","MGR - Studio",614
+"Louisiana","2018","MGR - 1 BDRM",732
+"Louisiana","2018","MGR - 2 BDRM",844
+"Louisiana","2019","MGR - Total",866
+"Louisiana","2019","MGR - Studio",710
+"Louisiana","2019","MGR - 1 BDRM",742
+"Louisiana","2019","MGR - 2 BDRM",863
+"Maine","2015","MGR - Total",792
+"Maine","2015","MGR - Studio",665
+"Maine","2015","MGR - 1 BDRM",619
+"Maine","2015","MGR - 2 BDRM",859
+"Maine","2016","MGR - Total",797
+"Maine","2016","MGR - Studio",594
+"Maine","2016","MGR - 1 BDRM",632
+"Maine","2016","MGR - 2 BDRM",866
+"Maine","2017","MGR - Total",806
+"Maine","2017","MGR - Studio",529
+"Maine","2017","MGR - 1 BDRM",647
+"Maine","2017","MGR - 2 BDRM",868
+"Maine","2018","MGR - Total",839
+"Maine","2018","MGR - Studio",623
+"Maine","2018","MGR - 1 BDRM",693
+"Maine","2018","MGR - 2 BDRM",903
+"Maine","2019","MGR - Total",870
+"Maine","2019","MGR - Studio",727
+"Maine","2019","MGR - 1 BDRM",673
+"Maine","2019","MGR - 2 BDRM",909
+"Maryland","2015","MGR - Total",1278
+"Maryland","2015","MGR - Studio",904
+"Maryland","2015","MGR - 1 BDRM",1025
+"Maryland","2015","MGR - 2 BDRM",1310
+"Maryland","2016","MGR - Total",1314
+"Maryland","2016","MGR - Studio",993
+"Maryland","2016","MGR - 1 BDRM",1079
+"Maryland","2016","MGR - 2 BDRM",1321
+"Maryland","2017","MGR - Total",1337
+"Maryland","2017","MGR - Studio",1011
+"Maryland","2017","MGR - 1 BDRM",1118
+"Maryland","2017","MGR - 2 BDRM",1355
+"Maryland","2018","MGR - Total",1371
+"Maryland","2018","MGR - Studio",1077
+"Maryland","2018","MGR - 1 BDRM",1143
+"Maryland","2018","MGR - 2 BDRM",1392
+"Maryland","2019","MGR - Total",1401
+"Maryland","2019","MGR - Studio",1062
+"Maryland","2019","MGR - 1 BDRM",1180
+"Maryland","2019","MGR - 2 BDRM",1424
+"Massachusetts","2015","MGR - Total",1164
+"Massachusetts","2015","MGR - Studio",910
+"Massachusetts","2015","MGR - 1 BDRM",920
+"Massachusetts","2015","MGR - 2 BDRM",1234
+"Massachusetts","2016","MGR - Total",1179
+"Massachusetts","2016","MGR - Studio",817
+"Massachusetts","2016","MGR - 1 BDRM",966
+"Massachusetts","2016","MGR - 2 BDRM",1273
+"Massachusetts","2017","MGR - Total",1208
+"Massachusetts","2017","MGR - Studio",928
+"Massachusetts","2017","MGR - 1 BDRM",981
+"Massachusetts","2017","MGR - 2 BDRM",1292
+"Massachusetts","2018","MGR - Total",1295
+"Massachusetts","2018","MGR - Studio",917
+"Massachusetts","2018","MGR - 1 BDRM",1019
+"Massachusetts","2018","MGR - 2 BDRM",1381
+"Massachusetts","2019","MGR - Total",1360
+"Massachusetts","2019","MGR - Studio",1100
+"Massachusetts","2019","MGR - 1 BDRM",1086
+"Massachusetts","2019","MGR - 2 BDRM",1477
+"Michigan","2015","MGR - Total",803
+"Michigan","2015","MGR - Studio",616
+"Michigan","2015","MGR - 1 BDRM",635
+"Michigan","2015","MGR - 2 BDRM",819
+"Michigan","2016","MGR - Total",818
+"Michigan","2016","MGR - Studio",638
+"Michigan","2016","MGR - 1 BDRM",646
+"Michigan","2016","MGR - 2 BDRM",833
+"Michigan","2017","MGR - Total",835
+"Michigan","2017","MGR - Studio",633
+"Michigan","2017","MGR - 1 BDRM",667
+"Michigan","2017","MGR - 2 BDRM",846
+"Michigan","2018","MGR - Total",861
+"Michigan","2018","MGR - Studio",686
+"Michigan","2018","MGR - 1 BDRM",682
+"Michigan","2018","MGR - 2 BDRM",881
+"Michigan","2019","MGR - Total",888
+"Michigan","2019","MGR - Studio",674
+"Michigan","2019","MGR - 1 BDRM",713
+"Michigan","2019","MGR - 2 BDRM",906
+"Minnesota","2015","MGR - Total",888
+"Minnesota","2015","MGR - Studio",709
+"Minnesota","2015","MGR - 1 BDRM",747
+"Minnesota","2015","MGR - 2 BDRM",945
+"Minnesota","2016","MGR - Total",912
+"Minnesota","2016","MGR - Studio",699
+"Minnesota","2016","MGR - 1 BDRM",792
+"Minnesota","2016","MGR - 2 BDRM",956
+"Minnesota","2017","MGR - Total",939
+"Minnesota","2017","MGR - Studio",728
+"Minnesota","2017","MGR - 1 BDRM",817
+"Minnesota","2017","MGR - 2 BDRM",994
+"Minnesota","2018","MGR - Total",969
+"Minnesota","2018","MGR - Studio",780
+"Minnesota","2018","MGR - 1 BDRM",854
+"Minnesota","2018","MGR - 2 BDRM",1033
+"Minnesota","2019","MGR - Total",1016
+"Minnesota","2019","MGR - Studio",831
+"Minnesota","2019","MGR - 1 BDRM",902
+"Minnesota","2019","MGR - 2 BDRM",1082
+"Mississippi","2015","MGR - Total",724
+"Mississippi","2015","MGR - Studio",528
+"Mississippi","2015","MGR - 1 BDRM",560
+"Mississippi","2015","MGR - 2 BDRM",693
+"Mississippi","2016","MGR - Total",728
+"Mississippi","2016","MGR - Studio",545
+"Mississippi","2016","MGR - 1 BDRM",589
+"Mississippi","2016","MGR - 2 BDRM",687
+"Mississippi","2017","MGR - Total",742
+"Mississippi","2017","MGR - Studio",550
+"Mississippi","2017","MGR - 1 BDRM",564
+"Mississippi","2017","MGR - 2 BDRM",703
+"Mississippi","2018","MGR - Total",777
+"Mississippi","2018","MGR - Studio",570
+"Mississippi","2018","MGR - 1 BDRM",613
+"Mississippi","2018","MGR - 2 BDRM",743
+"Mississippi","2019","MGR - Total",777
+"Mississippi","2019","MGR - Studio",598
+"Mississippi","2019","MGR - 1 BDRM",613
+"Mississippi","2019","MGR - 2 BDRM",747
+"Missouri","2015","MGR - Total",763
+"Missouri","2015","MGR - Studio",555
+"Missouri","2015","MGR - 1 BDRM",600
+"Missouri","2015","MGR - 2 BDRM",757
+"Missouri","2016","MGR - Total",771
+"Missouri","2016","MGR - Studio",580
+"Missouri","2016","MGR - 1 BDRM",611
+"Missouri","2016","MGR - 2 BDRM",765
+"Missouri","2017","MGR - Total",800
+"Missouri","2017","MGR - Studio",622
+"Missouri","2017","MGR - 1 BDRM",636
+"Missouri","2017","MGR - 2 BDRM",789
+"Missouri","2018","MGR - Total",830
+"Missouri","2018","MGR - Studio",691
+"Missouri","2018","MGR - 1 BDRM",661
+"Missouri","2018","MGR - 2 BDRM",819
+"Missouri","2019","MGR - Total",834
+"Missouri","2019","MGR - Studio",687
+"Missouri","2019","MGR - 1 BDRM",683
+"Missouri","2019","MGR - 2 BDRM",829
+"Montana","2015","MGR - Total",763
+"Montana","2015","MGR - Studio",515
+"Montana","2015","MGR - 1 BDRM",558
+"Montana","2015","MGR - 2 BDRM",768
+"Montana","2016","MGR - Total",741
+"Montana","2016","MGR - Studio",498
+"Montana","2016","MGR - 1 BDRM",566
+"Montana","2016","MGR - 2 BDRM",761
+"Montana","2017","MGR - Total",759
+"Montana","2017","MGR - Studio",577
+"Montana","2017","MGR - 1 BDRM",623
+"Montana","2017","MGR - 2 BDRM",781
+"Montana","2018","MGR - Total",811
+"Montana","2018","MGR - Studio",607
+"Montana","2018","MGR - 1 BDRM",620
+"Montana","2018","MGR - 2 BDRM",830
+"Montana","2019","MGR - Total",831
+"Montana","2019","MGR - Studio",590
+"Montana","2019","MGR - 1 BDRM",660
+"Montana","2019","MGR - 2 BDRM",849
+"Nebraska","2015","MGR - Total",750
+"Nebraska","2015","MGR - Studio",600
+"Nebraska","2015","MGR - 1 BDRM",625
+"Nebraska","2015","MGR - 2 BDRM",760
+"Nebraska","2016","MGR - Total",769
+"Nebraska","2016","MGR - Studio",569
+"Nebraska","2016","MGR - 1 BDRM",635
+"Nebraska","2016","MGR - 2 BDRM",773
+"Nebraska","2017","MGR - Total",801
+"Nebraska","2017","MGR - Studio",548
+"Nebraska","2017","MGR - 1 BDRM",657
+"Nebraska","2017","MGR - 2 BDRM",812
+"Nebraska","2018","MGR - Total",830
+"Nebraska","2018","MGR - Studio",734
+"Nebraska","2018","MGR - 1 BDRM",703
+"Nebraska","2018","MGR - 2 BDRM",847
+"Nebraska","2019","MGR - Total",859
+"Nebraska","2019","MGR - Studio",727
+"Nebraska","2019","MGR - 1 BDRM",737
+"Nebraska","2019","MGR - 2 BDRM",850
+"Nevada","2015","MGR - Total",980
+"Nevada","2015","MGR - Studio",622
+"Nevada","2015","MGR - 1 BDRM",740
+"Nevada","2015","MGR - 2 BDRM",922
+"Nevada","2016","MGR - Total",1003
+"Nevada","2016","MGR - Studio",618
+"Nevada","2016","MGR - 1 BDRM",757
+"Nevada","2016","MGR - 2 BDRM",928
+"Nevada","2017","MGR - Total",1051
+"Nevada","2017","MGR - Studio",716
+"Nevada","2017","MGR - 1 BDRM",832
+"Nevada","2017","MGR - 2 BDRM",978
+"Nevada","2018","MGR - Total",1108
+"Nevada","2018","MGR - Studio",763
+"Nevada","2018","MGR - 1 BDRM",885
+"Nevada","2018","MGR - 2 BDRM",1049
+"Nevada","2019","MGR - Total",1168
+"Nevada","2019","MGR - Studio",796
+"Nevada","2019","MGR - 1 BDRM",937
+"Nevada","2019","MGR - 2 BDRM",1107
+"New Hampshire","2015","MGR - Total",1017
+"New Hampshire","2015","MGR - Studio",718
+"New Hampshire","2015","MGR - 1 BDRM",801
+"New Hampshire","2015","MGR - 2 BDRM",1105
+"New Hampshire","2016","MGR - Total",1026
+"New Hampshire","2016","MGR - Studio",740
+"New Hampshire","2016","MGR - 1 BDRM",842
+"New Hampshire","2016","MGR - 2 BDRM",1094
+"New Hampshire","2017","MGR - Total",1072
+"New Hampshire","2017","MGR - Studio",695
+"New Hampshire","2017","MGR - 1 BDRM",849
+"New Hampshire","2017","MGR - 2 BDRM",1147
+"New Hampshire","2018","MGR - Total",1090
+"New Hampshire","2018","MGR - Studio",765
+"New Hampshire","2018","MGR - 1 BDRM",854
+"New Hampshire","2018","MGR - 2 BDRM",1189
+"New Hampshire","2019","MGR - Total",1147
+"New Hampshire","2019","MGR - Studio",756
+"New Hampshire","2019","MGR - 1 BDRM",900
+"New Hampshire","2019","MGR - 2 BDRM",1273
+"New Jersey","2015","MGR - Total",1214
+"New Jersey","2015","MGR - Studio",855
+"New Jersey","2015","MGR - 1 BDRM",1024
+"New Jersey","2015","MGR - 2 BDRM",1287
+"New Jersey","2016","MGR - Total",1244
+"New Jersey","2016","MGR - Studio",874
+"New Jersey","2016","MGR - 1 BDRM",1057
+"New Jersey","2016","MGR - 2 BDRM",1318
+"New Jersey","2017","MGR - Total",1284
+"New Jersey","2017","MGR - Studio",953
+"New Jersey","2017","MGR - 1 BDRM",1092
+"New Jersey","2017","MGR - 2 BDRM",1346
+"New Jersey","2018","MGR - Total",1336
+"New Jersey","2018","MGR - Studio",979
+"New Jersey","2018","MGR - 1 BDRM",1136
+"New Jersey","2018","MGR - 2 BDRM",1418
+"New Jersey","2019","MGR - Total",1376
+"New Jersey","2019","MGR - Studio",1059
+"New Jersey","2019","MGR - 1 BDRM",1181
+"New Jersey","2019","MGR - 2 BDRM",1443
+"New Mexico","2015","MGR - Total",783
+"New Mexico","2015","MGR - Studio",548
+"New Mexico","2015","MGR - 1 BDRM",627
+"New Mexico","2015","MGR - 2 BDRM",745
+"New Mexico","2016","MGR - Total",804
+"New Mexico","2016","MGR - Studio",565
+"New Mexico","2016","MGR - 1 BDRM",643
+"New Mexico","2016","MGR - 2 BDRM",782
+"New Mexico","2017","MGR - Total",813
+"New Mexico","2017","MGR - Studio",565
+"New Mexico","2017","MGR - 1 BDRM",658
+"New Mexico","2017","MGR - 2 BDRM",780
+"New Mexico","2018","MGR - Total",830
+"New Mexico","2018","MGR - Studio",598
+"New Mexico","2018","MGR - 1 BDRM",647
+"New Mexico","2018","MGR - 2 BDRM",806
+"New Mexico","2019","MGR - Total",847
+"New Mexico","2019","MGR - Studio",575
+"New Mexico","2019","MGR - 1 BDRM",683
+"New Mexico","2019","MGR - 2 BDRM",819
+"New York","2015","MGR - Total",1173
+"New York","2015","MGR - Studio",1091
+"New York","2015","MGR - 1 BDRM",1122
+"New York","2015","MGR - 2 BDRM",1180
+"New York","2016","MGR - Total",1194
+"New York","2016","MGR - Studio",1115
+"New York","2016","MGR - 1 BDRM",1148
+"New York","2016","MGR - 2 BDRM",1196
+"New York","2017","MGR - Total",1226
+"New York","2017","MGR - Studio",1158
+"New York","2017","MGR - 1 BDRM",1177
+"New York","2017","MGR - 2 BDRM",1223
+"New York","2018","MGR - Total",1274
+"New York","2018","MGR - Studio",1198
+"New York","2018","MGR - 1 BDRM",1208
+"New York","2018","MGR - 2 BDRM",1281
+"New York","2019","MGR - Total",1309
+"New York","2019","MGR - Studio",1218
+"New York","2019","MGR - 1 BDRM",1248
+"New York","2019","MGR - 2 BDRM",1320
+"North Carolina","2015","MGR - Total",827
+"North Carolina","2015","MGR - Studio",744
+"North Carolina","2015","MGR - 1 BDRM",692
+"North Carolina","2015","MGR - 2 BDRM",774
+"North Carolina","2016","MGR - Total",839
+"North Carolina","2016","MGR - Studio",727
+"North Carolina","2016","MGR - 1 BDRM",734
+"North Carolina","2016","MGR - 2 BDRM",779
+"North Carolina","2017","MGR - Total",861
+"North Carolina","2017","MGR - Studio",745
+"North Carolina","2017","MGR - 1 BDRM",760
+"North Carolina","2017","MGR - 2 BDRM",810
+"North Carolina","2018","MGR - Total",900
+"North Carolina","2018","MGR - Studio",765
+"North Carolina","2018","MGR - 1 BDRM",801
+"North Carolina","2018","MGR - 2 BDRM",846
+"North Carolina","2019","MGR - Total",931
+"North Carolina","2019","MGR - Studio",732
+"North Carolina","2019","MGR - 1 BDRM",853
+"North Carolina","2019","MGR - 2 BDRM",878
+"North Dakota","2015","MGR - Total",775
+"North Dakota","2015","MGR - Studio",657
+"North Dakota","2015","MGR - 1 BDRM",594
+"North Dakota","2015","MGR - 2 BDRM",774
+"North Dakota","2016","MGR - Total",776
+"North Dakota","2016","MGR - Studio",540
+"North Dakota","2016","MGR - 1 BDRM",631
+"North Dakota","2016","MGR - 2 BDRM",787
+"North Dakota","2017","MGR - Total",785
+"North Dakota","2017","MGR - Studio",618
+"North Dakota","2017","MGR - 1 BDRM",637
+"North Dakota","2017","MGR - 2 BDRM",790
+"North Dakota","2018","MGR - Total",808
+"North Dakota","2018","MGR - Studio",661
+"North Dakota","2018","MGR - 1 BDRM",723
+"North Dakota","2018","MGR - 2 BDRM",786
+"North Dakota","2019","MGR - Total",804
+"North Dakota","2019","MGR - Studio",658
+"North Dakota","2019","MGR - 1 BDRM",668
+"North Dakota","2019","MGR - 2 BDRM",815
+"Ohio","2015","MGR - Total",746
+"Ohio","2015","MGR - Studio",537
+"Ohio","2015","MGR - 1 BDRM",586
+"Ohio","2015","MGR - 2 BDRM",754
+"Ohio","2016","MGR - Total",759
+"Ohio","2016","MGR - Studio",570
+"Ohio","2016","MGR - 1 BDRM",587
+"Ohio","2016","MGR - 2 BDRM",767
+"Ohio","2017","MGR - Total",772
+"Ohio","2017","MGR - Studio",569
+"Ohio","2017","MGR - 1 BDRM",604
+"Ohio","2017","MGR - 2 BDRM",779
+"Ohio","2018","MGR - Total",797
+"Ohio","2018","MGR - Studio",605
+"Ohio","2018","MGR - 1 BDRM",625
+"Ohio","2018","MGR - 2 BDRM",810
+"Ohio","2019","MGR - Total",813
+"Ohio","2019","MGR - Studio",614
+"Ohio","2019","MGR - 1 BDRM",650
+"Ohio","2019","MGR - 2 BDRM",824
+"Oklahoma","2015","MGR - Total",759
+"Oklahoma","2015","MGR - Studio",561
+"Oklahoma","2015","MGR - 1 BDRM",602
+"Oklahoma","2015","MGR - 2 BDRM",742
+"Oklahoma","2016","MGR - Total",744
+"Oklahoma","2016","MGR - Studio",544
+"Oklahoma","2016","MGR - 1 BDRM",606
+"Oklahoma","2016","MGR - 2 BDRM",734
+"Oklahoma","2017","MGR - Total",780
+"Oklahoma","2017","MGR - Studio",607
+"Oklahoma","2017","MGR - 1 BDRM",628
+"Oklahoma","2017","MGR - 2 BDRM",770
+"Oklahoma","2018","MGR - Total",808
+"Oklahoma","2018","MGR - Studio",611
+"Oklahoma","2018","MGR - 1 BDRM",637
+"Oklahoma","2018","MGR - 2 BDRM",798
+"Oklahoma","2019","MGR - Total",814
+"Oklahoma","2019","MGR - Studio",607
+"Oklahoma","2019","MGR - 1 BDRM",641
+"Oklahoma","2019","MGR - 2 BDRM",793
+"Oregon","2015","MGR - Total",943
+"Oregon","2015","MGR - Studio",747
+"Oregon","2015","MGR - 1 BDRM",781
+"Oregon","2015","MGR - 2 BDRM",904
+"Oregon","2016","MGR - Total",1015
+"Oregon","2016","MGR - Studio",825
+"Oregon","2016","MGR - 1 BDRM",848
+"Oregon","2016","MGR - 2 BDRM",975
+"Oregon","2017","MGR - Total",1079
+"Oregon","2017","MGR - Studio",858
+"Oregon","2017","MGR - 1 BDRM",890
+"Oregon","2017","MGR - 2 BDRM",1043
+"Oregon","2018","MGR - Total",1130
+"Oregon","2018","MGR - Studio",881
+"Oregon","2018","MGR - 1 BDRM",931
+"Oregon","2018","MGR - 2 BDRM",1118
+"Oregon","2019","MGR - Total",1185
+"Oregon","2019","MGR - Studio",1017
+"Oregon","2019","MGR - 1 BDRM",998
+"Oregon","2019","MGR - 2 BDRM",1164
+"Pennsylvania","2015","MGR - Total",868
+"Pennsylvania","2015","MGR - Studio",666
+"Pennsylvania","2015","MGR - 1 BDRM",720
+"Pennsylvania","2015","MGR - 2 BDRM",893
+"Pennsylvania","2016","MGR - Total",881
+"Pennsylvania","2016","MGR - Studio",699
+"Pennsylvania","2016","MGR - 1 BDRM",744
+"Pennsylvania","2016","MGR - 2 BDRM",906
+"Pennsylvania","2017","MGR - Total",893
+"Pennsylvania","2017","MGR - Studio",755
+"Pennsylvania","2017","MGR - 1 BDRM",757
+"Pennsylvania","2017","MGR - 2 BDRM",915
+"Pennsylvania","2018","MGR - Total",927
+"Pennsylvania","2018","MGR - Studio",732
+"Pennsylvania","2018","MGR - 1 BDRM",776
+"Pennsylvania","2018","MGR - 2 BDRM",962
+"Pennsylvania","2019","MGR - Total",951
+"Pennsylvania","2019","MGR - Studio",762
+"Pennsylvania","2019","MGR - 1 BDRM",805
+"Pennsylvania","2019","MGR - 2 BDRM",971
+"Rhode Island","2015","MGR - Total",938
+"Rhode Island","2015","MGR - Studio",642
+"Rhode Island","2015","MGR - 1 BDRM",710
+"Rhode Island","2015","MGR - 2 BDRM",968
+"Rhode Island","2016","MGR - Total",948
+"Rhode Island","2016","MGR - Studio",677
+"Rhode Island","2016","MGR - 1 BDRM",761
+"Rhode Island","2016","MGR - 2 BDRM",988
+"Rhode Island","2017","MGR - Total",941
+"Rhode Island","2017","MGR - Studio",629
+"Rhode Island","2017","MGR - 1 BDRM",715
+"Rhode Island","2017","MGR - 2 BDRM",1000
+"Rhode Island","2018","MGR - Total",998
+"Rhode Island","2018","MGR - Studio",725
+"Rhode Island","2018","MGR - 1 BDRM",768
+"Rhode Island","2018","MGR - 2 BDRM",1065
+"Rhode Island","2019","MGR - Total",1043
+"Rhode Island","2019","MGR - Studio",798
+"Rhode Island","2019","MGR - 1 BDRM",845
+"Rhode Island","2019","MGR - 2 BDRM",1090
+"South Carolina","2015","MGR - Total",819
+"South Carolina","2015","MGR - Studio",668
+"South Carolina","2015","MGR - 1 BDRM",655
+"South Carolina","2015","MGR - 2 BDRM",783
+"South Carolina","2016","MGR - Total",841
+"South Carolina","2016","MGR - Studio",731
+"South Carolina","2016","MGR - 1 BDRM",689
+"South Carolina","2016","MGR - 2 BDRM",799
+"South Carolina","2017","MGR - Total",848
+"South Carolina","2017","MGR - Studio",696
+"South Carolina","2017","MGR - 1 BDRM",727
+"South Carolina","2017","MGR - 2 BDRM",822
+"South Carolina","2018","MGR - Total",892
+"South Carolina","2018","MGR - Studio",737
+"South Carolina","2018","MGR - 1 BDRM",778
+"South Carolina","2018","MGR - 2 BDRM",839
+"South Carolina","2019","MGR - Total",922
+"South Carolina","2019","MGR - Studio",667
+"South Carolina","2019","MGR - 1 BDRM",827
+"South Carolina","2019","MGR - 2 BDRM",879
+"South Dakota","2015","MGR - Total",675
+"South Dakota","2015","MGR - Studio",423
+"South Dakota","2015","MGR - 1 BDRM",532
+"South Dakota","2015","MGR - 2 BDRM",692
+"South Dakota","2016","MGR - Total",706
+"South Dakota","2016","MGR - Studio",559
+"South Dakota","2016","MGR - 1 BDRM",512
+"South Dakota","2016","MGR - 2 BDRM",758
+"South Dakota","2017","MGR - Total",722
+"South Dakota","2017","MGR - Studio",575
+"South Dakota","2017","MGR - 1 BDRM",556
+"South Dakota","2017","MGR - 2 BDRM",752
+"South Dakota","2018","MGR - Total",734
+"South Dakota","2018","MGR - Studio",563
+"South Dakota","2018","MGR - 1 BDRM",564
+"South Dakota","2018","MGR - 2 BDRM",755
+"South Dakota","2019","MGR - Total",769
+"South Dakota","2019","MGR - Studio",592
+"South Dakota","2019","MGR - 1 BDRM",600
+"South Dakota","2019","MGR - 2 BDRM",790
+"Tennessee","2015","MGR - Total",785
+"Tennessee","2015","MGR - Studio",577
+"Tennessee","2015","MGR - 1 BDRM",632
+"Tennessee","2015","MGR - 2 BDRM",755
+"Tennessee","2016","MGR - Total",806
+"Tennessee","2016","MGR - Studio",642
+"Tennessee","2016","MGR - 1 BDRM",668
+"Tennessee","2016","MGR - 2 BDRM",779
+"Tennessee","2017","MGR - Total",833
+"Tennessee","2017","MGR - Studio",669
+"Tennessee","2017","MGR - 1 BDRM",683
+"Tennessee","2017","MGR - 2 BDRM",787
+"Tennessee","2018","MGR - Total",861
+"Tennessee","2018","MGR - Studio",745
+"Tennessee","2018","MGR - 1 BDRM",716
+"Tennessee","2018","MGR - 2 BDRM",828
+"Tennessee","2019","MGR - Total",904
+"Tennessee","2019","MGR - Studio",746
+"Tennessee","2019","MGR - 1 BDRM",780
+"Tennessee","2019","MGR - 2 BDRM",866
+"Texas","2015","MGR - Total",932
+"Texas","2015","MGR - Studio",740
+"Texas","2015","MGR - 1 BDRM",792
+"Texas","2015","MGR - 2 BDRM",919
+"Texas","2016","MGR - Total",956
+"Texas","2016","MGR - Studio",779
+"Texas","2016","MGR - 1 BDRM",832
+"Texas","2016","MGR - 2 BDRM",939
+"Texas","2017","MGR - Total",987
+"Texas","2017","MGR - Studio",788
+"Texas","2017","MGR - 1 BDRM",863
+"Texas","2017","MGR - 2 BDRM",973
+"Texas","2018","MGR - Total",1046
+"Texas","2018","MGR - Studio",845
+"Texas","2018","MGR - 1 BDRM",914
+"Texas","2018","MGR - 2 BDRM",1040
+"Texas","2019","MGR - Total",1091
+"Texas","2019","MGR - Studio",900
+"Texas","2019","MGR - 1 BDRM",954
+"Texas","2019","MGR - 2 BDRM",1083
+"Utah","2015","MGR - Total",925
+"Utah","2015","MGR - Studio",580
+"Utah","2015","MGR - 1 BDRM",750
+"Utah","2015","MGR - 2 BDRM",857
+"Utah","2016","MGR - Total",954
+"Utah","2016","MGR - Studio",734
+"Utah","2016","MGR - 1 BDRM",764
+"Utah","2016","MGR - 2 BDRM",893
+"Utah","2017","MGR - Total",986
+"Utah","2017","MGR - Studio",684
+"Utah","2017","MGR - 1 BDRM",804
+"Utah","2017","MGR - 2 BDRM",920
+"Utah","2018","MGR - Total",1043
+"Utah","2018","MGR - Studio",789
+"Utah","2018","MGR - 1 BDRM",845
+"Utah","2018","MGR - 2 BDRM",959
+"Utah","2019","MGR - Total",1098
+"Utah","2019","MGR - Studio",835
+"Utah","2019","MGR - 1 BDRM",922
+"Utah","2019","MGR - 2 BDRM",1055
+"Vermont","2015","MGR - Total",923
+"Vermont","2015","MGR - Studio",640
+"Vermont","2015","MGR - 1 BDRM",778
+"Vermont","2015","MGR - 2 BDRM",1041
+"Vermont","2016","MGR - Total",925
+"Vermont","2016","MGR - Studio",745
+"Vermont","2016","MGR - 1 BDRM",765
+"Vermont","2016","MGR - 2 BDRM",1023
+"Vermont","2017","MGR - Total",950
+"Vermont","2017","MGR - Studio",683
+"Vermont","2017","MGR - 1 BDRM",761
+"Vermont","2017","MGR - 2 BDRM",1078
+"Vermont","2018","MGR - Total",969
+"Vermont","2018","MGR - Studio",706
+"Vermont","2018","MGR - 1 BDRM",797
+"Vermont","2018","MGR - 2 BDRM",1131
+"Vermont","2019","MGR - Total",980
+"Vermont","2019","MGR - Studio",794
+"Vermont","2019","MGR - 1 BDRM",825
+"Vermont","2019","MGR - 2 BDRM",1127
+"Virginia","2015","MGR - Total",1144
+"Virginia","2015","MGR - Studio",1001
+"Virginia","2015","MGR - 1 BDRM",991
+"Virginia","2015","MGR - 2 BDRM",1064
+"Virginia","2016","MGR - Total",1159
+"Virginia","2016","MGR - Studio",1081
+"Virginia","2016","MGR - 1 BDRM",1024
+"Virginia","2016","MGR - 2 BDRM",1064
+"Virginia","2017","MGR - Total",1179
+"Virginia","2017","MGR - Studio",1087
+"Virginia","2017","MGR - 1 BDRM",1063
+"Virginia","2017","MGR - 2 BDRM",1074
+"Virginia","2018","MGR - Total",1215
+"Virginia","2018","MGR - Studio",1112
+"Virginia","2018","MGR - 1 BDRM",1131
+"Virginia","2018","MGR - 2 BDRM",1126
+"Virginia","2019","MGR - Total",1254
+"Virginia","2019","MGR - Studio",1264
+"Virginia","2019","MGR - 1 BDRM",1153
+"Virginia","2019","MGR - 2 BDRM",1172
+"Washington","2015","MGR - Total",1080
+"Washington","2015","MGR - Studio",872
+"Washington","2015","MGR - 1 BDRM",872
+"Washington","2015","MGR - 2 BDRM",1031
+"Washington","2016","MGR - Total",1135
+"Washington","2016","MGR - Studio",944
+"Washington","2016","MGR - 1 BDRM",953
+"Washington","2016","MGR - 2 BDRM",1088
+"Washington","2017","MGR - Total",1216
+"Washington","2017","MGR - Studio",1066
+"Washington","2017","MGR - 1 BDRM",1030
+"Washington","2017","MGR - 2 BDRM",1180
+"Washington","2018","MGR - Total",1316
+"Washington","2018","MGR - Studio",1134
+"Washington","2018","MGR - 1 BDRM",1149
+"Washington","2018","MGR - 2 BDRM",1259
+"Washington","2019","MGR - Total",1359
+"Washington","2019","MGR - Studio",1171
+"Washington","2019","MGR - 1 BDRM",1190
+"Washington","2019","MGR - 2 BDRM",1336
+"West Virginia","2015","MGR - Total",675
+"West Virginia","2015","MGR - Studio",754
+"West Virginia","2015","MGR - 1 BDRM",495
+"West Virginia","2015","MGR - 2 BDRM",670
+"West Virginia","2016","MGR - Total",682
+"West Virginia","2016","MGR - Studio",595
+"West Virginia","2016","MGR - 1 BDRM",515
+"West Virginia","2016","MGR - 2 BDRM",672
+"West Virginia","2017","MGR - Total",690
+"West Virginia","2017","MGR - Studio",434
+"West Virginia","2017","MGR - 1 BDRM",515
+"West Virginia","2017","MGR - 2 BDRM",691
+"West Virginia","2018","MGR - Total",735
+"West Virginia","2018","MGR - Studio",667
+"West Virginia","2018","MGR - 1 BDRM",557
+"West Virginia","2018","MGR - 2 BDRM",723
+"West Virginia","2019","MGR - Total",727
+"West Virginia","2019","MGR - Studio",539
+"West Virginia","2019","MGR - 1 BDRM",540
+"West Virginia","2019","MGR - 2 BDRM",739
+"Wisconsin","2015","MGR - Total",792
+"Wisconsin","2015","MGR - Studio",607
+"Wisconsin","2015","MGR - 1 BDRM",633
+"Wisconsin","2015","MGR - 2 BDRM",810
+"Wisconsin","2016","MGR - Total",802
+"Wisconsin","2016","MGR - Studio",607
+"Wisconsin","2016","MGR - 1 BDRM",658
+"Wisconsin","2016","MGR - 2 BDRM",808
+"Wisconsin","2017","MGR - Total",819
+"Wisconsin","2017","MGR - Studio",646
+"Wisconsin","2017","MGR - 1 BDRM",658
+"Wisconsin","2017","MGR - 2 BDRM",830
+"Wisconsin","2018","MGR - Total",847
+"Wisconsin","2018","MGR - Studio",647
+"Wisconsin","2018","MGR - 1 BDRM",688
+"Wisconsin","2018","MGR - 2 BDRM",860
+"Wisconsin","2019","MGR - Total",867
+"Wisconsin","2019","MGR - Studio",727
+"Wisconsin","2019","MGR - 1 BDRM",706
+"Wisconsin","2019","MGR - 2 BDRM",881
+"Wyoming","2015","MGR - Total",815
+"Wyoming","2015","MGR - Studio",607
+"Wyoming","2015","MGR - 1 BDRM",604
+"Wyoming","2015","MGR - 2 BDRM",747
+"Wyoming","2016","MGR - Total",840
+"Wyoming","2016","MGR - Studio",631
+"Wyoming","2016","MGR - 1 BDRM",644
+"Wyoming","2016","MGR - 2 BDRM",785
+"Wyoming","2017","MGR - Total",832
+"Wyoming","2017","MGR - Studio",598
+"Wyoming","2017","MGR - 1 BDRM",634
+"Wyoming","2017","MGR - 2 BDRM",785
+"Wyoming","2018","MGR - Total",818
+"Wyoming","2018","MGR - Studio",725
+"Wyoming","2018","MGR - 1 BDRM",605
+"Wyoming","2018","MGR - 2 BDRM",785
+"Wyoming","2019","MGR - Total",822
+"Wyoming","2019","MGR - Studio",411
+"Wyoming","2019","MGR - 1 BDRM",611
+"Wyoming","2019","MGR - 2 BDRM",800
